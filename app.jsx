@@ -9,5 +9,5 @@ const app = (
 );
 
 const container = document.getElementById("root");
-let App = dx.render(app, container);
-document.body.appendChild(App);
+let App = dx.render(app);
+container.appendChild(App);
