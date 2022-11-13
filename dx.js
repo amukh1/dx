@@ -1,9 +1,13 @@
+
 function element(nodeName, attributes, ...args) {
+    console.log(nodeName)
     let children = args.length ? [].concat(...args) : null;
     return { nodeName, attributes, children };
 }
 
 function render(vnode, container) {
+    console.log(vnode)
+
     if (vnode.split) return document.createTextNode(vnode);
 
     let n = document.createElement(vnode.nodeName);
@@ -17,7 +21,25 @@ function render(vnode, container) {
     return n;
 }
 
+let Globalstate = [];
+
+function useState(initial) {
+    let state = initial;
+    Globalstate.push(initial)
+    let index = Globalstate.length - 1;
+    function setState(next) {
+        console.log(state)
+        Globalstate
+        state = next;
+    }
+    return [state, setState];
+}
+
 let dx = {
     element,
     render,
+    useState
 }
+
+// set dx.element as the default pragma, and replace all react settings with dx
+
