@@ -58,6 +58,5 @@ let Thing = (
 
 
 const container = document.getElementById("root");
-let App = dx.render(app, container);
-console.log(App)
+let App = dx.render(app);
 container.appendChild(App);
