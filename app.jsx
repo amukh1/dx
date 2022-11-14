@@ -10,7 +10,7 @@ let rando = Math.floor(Math.random() * 250)
 const app = (
 	<div>
 	  <h1 class="head">This is <span class={"blu"} onClick={"hhh()"}>dx</span></h1>
-	  <h2 class="head2">Image a react that could fit within a <span class="blu" onClick={"hhh()"}>CDN</span></h2>
+	  <h2 class="head2">Imagine a React that could fit within a <span class="blu" onClick={"hhh()"}>CDN</span></h2>
 	  <h2>Random number: {rando.toString()}</h2>
 	  <button onClick="hhh()">Github</button>
 	  {/* {Thing} */}
