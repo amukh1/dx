@@ -5,11 +5,14 @@
 // console.log(count)
 console.log(dx)
 
+let rando = Math.floor(Math.random() * 250)
+
 const app = (
 	<div>
-	  <h1>Hello World!</h1>
-	  <h2>This is <span style="color:blue;">dx</span> (<span style="color:red;">dy</span> coming soon)</h2>
-	  <button onClick="hhh()">hhhh</button>
+	  <h1 class="head">This is <span class={"blu"} onClick={"hhh()"}>dx</span></h1>
+	  <h2 class="head2">Image a react that could fit within a <span class="blu" onClick={"hhh()"}>CDN</span></h2>
+	  <h2>Random number: {rando.toString()}</h2>
+	  <button onClick="hhh()">Github</button>
 	  {/* {Thing} */}
 	</div>
 );
@@ -17,6 +20,7 @@ const app = (
 function hhh() {
 	// setCount(count + 1)
 	console.log('hhh');
+	window.location.href = "https://github.com/amukh1/dx"
 }
 
 let Thing = (

@@ -6,7 +6,11 @@ function element(nodeName, attributes, ...args) {
 }
 
 function render(vnode, container) {
-    console.log(vnode)
+    console.log('vnpode:'+vnode)
+
+    if(typeof vnode == Number){
+        vnode = vnode.toString()
+    }
 
     if (vnode.split) return document.createTextNode(vnode);
 

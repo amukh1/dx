@@ -1,5 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+
 body {
 	padding: 20px 20px 320px;
+	font-family: 'Oswald', sans-serif;
+	text-align: center;
 }
 * {
 	box-sizing: border-box;
@@ -18,4 +22,44 @@ pre {
 	font: 11px/1.1 Menlo,Monaco,'Courier New',courier;
 	color: #555;
 	overflow: auto;
+}
+
+.head {
+	font-size: 4rem;
+}
+
+.head2 {
+	font-size: 3rem;
+}
+
+button {
+	transition: all 0.5s ease;
+	position: relative;
+	top: 0;
+	cursor: pointer;
+	padding: 10px 20px;
+	font-size: 1.5rem;
+	border: 1px solid #CCC;
+	border-radius: 5px;
+	background: #292929;
+	color: white;
+	font-family: 'Oswald', sans-serif;
+}
+
+button:hover {
+	background: rgb(73, 73, 73);
+	top: -10px;
+}
+
+.blu {
+	transition: all 0.5s ease;
+	cursor: pointer;
+	position: relative;
+	top: 0;
+	color: blue;
+}
+
+.blu:hover {
+	color: rgb(6, 6, 181);
+	top: -10px;
 }
